@@ -8,6 +8,7 @@ var imagenCambio1=window.document.getElementById("imagenColor1");
 cambioColor1a.addEventListener('click',function color1(){
     imagenCambio1.style.filter='saturate(0)';
     imagenCambio1.style.filter= 'hue-rotate(0deg)';
+
 });
 cambioColor2a.addEventListener('click',function color2(){
     imagenCambio1.style.filter='saturate(0)';
@@ -21,13 +22,15 @@ cambioColor3a.addEventListener('click',function color3(){
 imagenCambio1.addEventListener('click',(imagenColor1)=>{
  if(cambio){
     imagenCambio1.style.width='300px';
-    imagenCambio1.style.top= '-40px';
+    imagenCambio1.style.top= '-3px';
     imagenCambio1.style.left= '-59px';
+    imagenCambio1.style.transform= 'rotate(-20deg)';
     cambio=false;
 }else{
     imagenCambio1.style.top= '0px';
     imagenCambio1.style.width='130px';
     imagenCambio1.style.left= '99px';
+    imagenCambio1.style.transform= 'rotate(0deg)';
     cambio=true;
 }
 });
@@ -37,7 +40,7 @@ var imagenCambio2=window.document.getElementById("imagenColor2");
 imagenCambio2.addEventListener('click',(imagenColor2)=>{
     if(cambio){
        imagenCambio2.style.width='300px';
-       imagenCambio2.style.top= '50px';
+       imagenCambio2.style.top= '100px';
        imagenCambio2.style.left= '-59px';
        cambio=false;
    }else{
@@ -65,7 +68,7 @@ cambioColor3c.addEventListener('click',function color3(){
 imagenCambio3.addEventListener('click',(imagenColor3)=>{
     if(cambio){
        imagenCambio3.style.width='300px';
-       imagenCambio3.style.top= '-30px';
+       imagenCambio3.style.top= '8px';
        imagenCambio3.style.left= '-55px';
        cambio=false;
    }else{
