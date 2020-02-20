@@ -1,7 +1,7 @@
 // Icon Menu
 const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.menu-container');
-const enlaces = document.querySelectorAll('.enlaces-Internos');
+// const nav = document.querySelector('.menu-container');
+// const enlaces = document.querySelectorAll('.enlaces-Internos');
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () =>{
@@ -23,7 +23,7 @@ let SnavBar=document.getElementById("nav");
 window.onscroll = function() {
     let Desplazamiento_Actual = window.pageYOffset;
     position();
-    if((ubicacionPrincipal >= Desplazamiento_Actual) || (ubicacionPrincipal<=625)){
+    if((ubicacionPrincipal >= Desplazamiento_Actual) || (ubicacionPrincipal<=600)){
     SnavBar.style.visibility= "visible";
     SnavBar.style.opacity= "1";
 
@@ -43,7 +43,7 @@ function estilosnavBarUp(){
 function estilosnavBarDown(){SnavBar.style.background= "#00000098";}
 function position(){
     if(ubicacionPrincipal<=42){SnavBar.style.background="#102135";
-    }else if(ubicacionPrincipal>625){
+    }else if(ubicacionPrincipal>500){
         estilosnavBarDown();
         setOpacity(".enlaces-Internos");
     }
