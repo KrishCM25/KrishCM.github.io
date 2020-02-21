@@ -66,8 +66,9 @@ body{
     line-height: 38px;
 }
 .logo h1{
-    text-transform: uppercase;
-    font-size: 1.2em;
+    /* text-transform: uppercase; */
+    font-size: 1.5em;
+    font-weight: normal;
     font-family: "Cocosignum";
 }
 .icons-right{
@@ -576,7 +577,7 @@ section img{
 }
 /* Social */
 .social-container{
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     min-height: 100vh;
@@ -644,14 +645,15 @@ section img{
     letter-spacing: 1px;
 }
 .cardsmall-container{
-    grid-area: 3/1/5/5;
+    grid-area: 3/1/4/5;
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    overflow: hidden;
 }
 /*  */
 /* Face */
 .card-face{
-    background: #2840bc;
+    background: #2840BC;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -663,7 +665,6 @@ section img{
 .cardsmall, .card{
     overflow: hidden;
 }
-
 .c1 img{
     transform: translate(-100px,0);
     -webkit-transform: translate(-100px,0);
@@ -671,20 +672,30 @@ section img{
     -ms-transform: translate(-100px,0);
     -o-transform: translate(-100px,0);
 }
+.c2 img{
+    transform: translate(-100px,0);
+    -webkit-transform: translate(-100px,0);
+    -moz-transform: translate(-100px,0);
+    -ms-transform: translate(-100px,0);
+    -o-transform: translate(-100px,0);
+}
 .c3 img{
-    transform: translate(-153px,-40px);
-    -webkit-transform: translate(-153px,-40px);
-    -moz-transform: translate(-153px,-40px);
-    -ms-transform: translate(-153px,-40px);
-    -o-transform: translate(-153px,-40px);
+    transform: translate(-100px,0);
+    -webkit-transform: translate(-100px,0);
+    -moz-transform: translate(-100px,0);
+    -ms-transform: translate(-100px,0);
+    -o-transform: translate(-100px,0);
 }
-
-.card img{
-    width: 346px;
+.card img
+{
+    max-height: 100%;
+    width: auto;
 }
-.cardsmall img{
-
-width: 395px;
+.cardsmall img
+{
+    overflow: hidden;
+    max-height: 100%;
+    width: auto;
 }
 /* 
     background-image: url(PaginaBodyGradient/run.jpg);
@@ -708,33 +719,156 @@ width: 395px;
     grid-template-rows: repeat(2,1fr);
     z-index: 40;
 }
-/* Suscription */
-.suscription{
-    width: 100%;
-    height: 35vh;
-    background: rgb(255, 255, 255);
-}
-/* Footer */
-footer{
-
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 100%;
-    height: 20vh;
-    background: #232323;
-    color: #fff;
-    font-size: .8rem;
-}
 .companie1{
-display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
-}
+    background: #fff;
+    align-items: center;}
 .companies img{
-    width: 90px;
+    max-width:60%;
+    height: auto;
     filter:opacity(0.5);
     -webkit-filter:opacity(0.5);
 }
+/* Suscription */
 .suscription{
-    background: #d1d4d6;
+    width: 100%;
+    height: 35vh;    
+    background: url("19742.jpg") no-repeat fixed ;
+}
+.suscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.suscription h2{
+    font-family: "Fjalla One";
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+.suscription p{
+    margin: 10px;
+    font-family: "Noto Sans";
+    color: rgb(156, 154, 146);
+}
+.form{
+
+    width: 36%;
+    position: relative;
+}
+.input{
+    margin: 10px;
+}
+.input button,
+.input input{
+    padding: 10px;
+}
+.input input{
+    width: 100%;
+    border: none;
+    color: rgb(199, 167, 38);
+    box-shadow: rgb(141, 139, 139) 0px 0px 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.form button{
+    position: absolute;
+    bottom: 16px;
+    left: 92%;
+    border: none;
+    background: #fff;
+}
+.input ::-webkit-input-placeholder { color: rgb(165, 161, 161); }
+/* Footer */
+footer{
+    padding: 10px 11%;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    background: #232323;
+    color: rgb(141, 139, 139);
+    font-size: .8rem;
+    cursor: default;
+}
+.shoes-politics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.shoes-politics h3{
+    color: #fff;
+    font-family: "Cocosignum";
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+.shoes-politics>p{
+    letter-spacing: -.5px;
+    font-size: .9em;
+    font-family: "Noto Sans";
+    color: rgb(100, 99, 98);
+}
+.shoes-politics ul{
+    display: flex;
+}
+.shoes-politics ul li{
+    color: #b9b9b9;
+    margin: 5px 5px 5px 0;
+    font-size: .85em;
+    letter-spacing: .2px;
+}
+.helpShoes{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    flex-direction: column;
+}
+.AboutUs h4,
+.helpShoes h4{
+    color: #fff;
+    font-family: "Fjalla One";
+    font-weight: normal;
+    font-size: 1em;
+    cursor: pointer;
+}
+.AboutUs ul,
+.helpShoes ul{
+    margin-top: 15px;
+}
+.AboutUs ul li,
+.helpShoes ul li{
+    margin: 3px 0px 3px 0;
+    font-size: .9em;
+    cursor: pointer;
+}
+.RedesLogos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.Redes i{
+    color: #fff;
+    margin: 3px;
+    cursor: pointer;
+}
+.RedesLogos .pago p{
+    font-size: .8em;
+}
+.RedesLogos .pago i{
+    color: #fff;
+    font-size: 1.2em;
+    float: right;
+    margin: 8px;
+    cursor: pointer;
 }

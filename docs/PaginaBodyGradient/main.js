@@ -58,3 +58,19 @@ function setOpacity(className) {
 function setOpacityOFF(className) {
     document.querySelectorAll(className).forEach(el => el.style.color = "#fff");
 }
+// Ejercicio3
+
+// function rangePar(v1,v2,callback){
+//     callback(v1,v2);                                                                                                                                                                    
+//   }    
+//   var cnt=0;
+//   rangePar(1,20,function(v1,v2){
+
+//     for(let i=v1;i<=v2;i++){    
+//       if(i%2===0){
+//         console.log(i+" ");
+//         cnt++;
+//       }
+//   }
+//   console.log(cnt);
+// });
