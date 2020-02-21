@@ -725,7 +725,7 @@ section img{
     background: #fff;
     align-items: center;}
 .companies img{
-    max-width:60%;
+    max-width:50%;
     height: auto;
     filter:opacity(0.5);
     -webkit-filter:opacity(0.5);
