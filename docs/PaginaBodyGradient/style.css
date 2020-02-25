@@ -6,10 +6,6 @@
     font-family: "Sequel Regular";
     src: url("font/Sequel-Regular.ttf") format("truetype");
 }
-@font-face{
-    font-family: "Kamerik";
-    src: url("font/Kamerik\ 105\ W00\ Bold.ttf") format("truetype");
-}
 *{
     margin: 0;
     border: 0;
@@ -148,7 +144,7 @@ body{
 .menu-btn__burger::before,
 .menu-btn__burger::after{
     width: 20px;
-    height: 1.5px;
+    height: 2px;
     background: rgb(255, 255, 255);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -161,6 +157,9 @@ body{
     -ms-transition: transform .3s ease-in-out, background .3s ease-in-out;
     -o-transition: transform .3s ease-in-out, background .3s ease-in-out;
     box-shadow: 0px 2px 5px rgba(255,101,47,.2);
+}
+.menu-btn__burger{
+    width: 15px;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after{
@@ -310,7 +309,6 @@ nav .animation{
 /*  */
 .category>p{
     display: none;
-    font-family: "Kamerik";
     font-size: .8rem;
 }
 /* ShadowPage */

@@ -53,7 +53,7 @@ function position(){
     }
 }
 function setOpacity(className) {
-    document.querySelectorAll(className).forEach(el => el.style.color = "#000");
+    document.querySelectorAll(className).forEach(el => el.style.color = "#FFF");
 }
 function setOpacityOFF(className) {
     document.querySelectorAll(className).forEach(el => el.style.color = "#fff");
